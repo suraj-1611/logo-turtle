@@ -1,0 +1,51 @@
+html, body {
+	padding:0;
+	margin:0;
+	resize:none;
+}
+.grid {
+	display:grid;
+	grid-template-columns: calc(100% - 250px - 20px) calc(250px + 20px);
+	height:100%;
+}
+#turtle{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:20px;
+	height:28px;
+	margin:0;
+	padding:0;
+}
+#canvas {
+	display:inline-block;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:calc(100% - 60px)
+}
+#console {
+	display:inline-block;
+	width:250px;
+	height:calc(100% - 5px - 20px);
+	margin:5px 0 0 5px;
+	padding:10px;
+	resize:none;
+	outline:0;
+	border:1px solid grey;
+	border-radius:3px;
+}
+#command_input {
+	display:block;
+	width:calc(100% - 4px);
+	height:40px;
+	line-height:40px;
+	margin:0;
+	padding:0 20px;
+	outline:0;
+	font-size:16px;
+	font-family:Consolas;
+	border:1px solid grey;
+	border-radius:3px;
+}
